@@ -13,7 +13,7 @@ from pygame.locals import (
 from typing import Callable
 
 
-def run_until_quit(func: Callable = lambda x: x):
+def run_until_quit(func: Callable = lambda: None):
   running = True
   while running:
     for ev in pygame.event.get():
