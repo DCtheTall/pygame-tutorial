@@ -19,6 +19,7 @@ def run_until_quit(func: Callable):
 
 def draw_circle(screen: pygame.Surface):
   """Draw a blue circle in the center of the screen."""
+  screen.fill((255, 255, 255))
   pygame.draw.circle(screen, [0, 0, 255], [250, 250], 75)
   pygame.display.flip()
 
